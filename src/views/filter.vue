@@ -1,6 +1,6 @@
 <template>
     <div class="filter mb-5">
-        <h1>filter page</h1>
+        <h1>แบบคัดกรองนักเรียนรายบุคคล</h1>
         <div class="stepper">
             <filter1 v-if="filterStep === 1"></filter1>
             <filter2 v-if="filterStep === 2"></filter2>
