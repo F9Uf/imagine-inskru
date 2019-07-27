@@ -2,7 +2,7 @@
   <form>
     <div class="form-group">
       <label for="Cd">
-        Congenital disease:
+        โรคประจำตัว:
         <input type="text" class="form-control" id="Cd" />
       </label>
     </div>
@@ -14,73 +14,141 @@
     </div>
     <div class="form-group">
       <label for="weight">
-        Weight:
+        น้ำหนัก:
         <input type="text" class="form-control" id="weight" placeholder="Kilograms" />
       </label>
     </div>
     <div class="form-group">
       <label for="height">
-        Height:
+        ส่วนสูง:
         <input type="text" class="form-control" id="height" placeholder="Centimetres" />
       </label>
     </div>
-    <div class="form-group">
-      <label for="Cd">
-        Congenital disease:
-        <input type="text" class="form-control" id="Cd" />
-      </label>
-    </div>
-    <div class="form-check">
-      ป่วยเป็นโรคร้ายเเรงหรือเรื้อรังหรือไม่
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio" />ใช่
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio" />ไม่
-      </label>
-    </div>
-    <div class="form-check">
-      นักเรียนมีสายตาที่
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio2" />ปกติ
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio2" />สั้น
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio2" />ยาว
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio2" />เอียง
-      </label>
-    </div>
-    <div class="form-check">
-      นักเรียนใส่เเว่นหรือไม่
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio3" />ใช่
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio3" />ไม่
-      </label>
-    </div>
-    <div class="form-check">
-      นักเรียนมีความบกพร่องทางการได้ยินหรือไม่
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio4" />ใช่
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio4" />ไม่
-      </label>
-    </div>
-    <div class="form-check">
-      นักเรียนมีความบกพร่องทางกายหรือไม่
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio5" />ใช่
-      </label>
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optradio5" />ไม่
-      </label>
-    </div>
+
+         
+     
+      <div class="custom-control custom-radio">
+        ป่วยเป็นโรคร้ายเเรงหรือเรื้อรังหรือไม่ <br>
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio1"
+          name="groupOfDefaultRadios"
+        />
+        <label class="custom-control-label" for="radio1">ใช่</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio2"
+          name="groupOfDefaultRadios"
+        />
+        <label class="custom-control-label" for="radio2">ไม่</label>
+      </div>
+      <br>
+    
+   <div class="custom-control custom-radio">
+        นักเรียนมีสายตาที่ <br>
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio3"
+          name="groupOfDefaultRadios2"
+        />
+        <label class="custom-control-label" for="radio3">ปกติ</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio4"
+          name="groupOfDefaultRadios2"
+        />
+        <label class="custom-control-label" for="radio4">สั้น</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio5"
+          name="groupOfDefaultRadios3"
+        />
+        <label class="custom-control-label" for="radio5">ยาว</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio6"
+          name="groupOfDefaultRadios3"
+        />
+        <label class="custom-control-label" for="radio6">เอียง</label>
+      </div>
+      <br>
+
+    <div class="custom-control custom-radio">
+        นักเรียนสวมเเว่นหรือไม่ <br>
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio7"
+          name="groupOfDefaultRadios4"
+        />
+        <label class="custom-control-label" for="radio7">ใช่</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio8"
+          name="groupOfDefaultRadios4"
+        />
+        <label class="custom-control-label" for="radio8">ไม่</label>
+      </div>
+      <br>
+
+    <div class="custom-control custom-radio">
+        นักเรียนมีความบกพร่องทางการได้ยินหรือไม่ <br>
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio9"
+          name="groupOfDefaultRadios5"
+        />
+        <label class="custom-control-label" for="radio7">ใช่</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio10"
+          name="groupOfDefaultRadios5"
+        />
+        <label class="custom-control-label" for="radio10">ไม่</label>
+      </div>
+      <br>
+
+    <div class="custom-control custom-radio">
+        นักเรียนมีความบกพร่องทางกายหรือไม่ <br>
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio11"
+          name="groupOfDefaultRadios6"
+        />
+        <label class="custom-control-label" for="radio11">ใช่</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          class="custom-control-input"
+          id="radio12"
+          name="groupOfDefaultRadios6"
+        />
+        <label class="custom-control-label" for="radio12">ไม่</label>
+      </div>
+      <br>
     <br />
     <br />
     <input type="submit" value="Submit" />
