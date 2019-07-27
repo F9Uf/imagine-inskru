@@ -27,6 +27,8 @@ import filter6 from '../components/filter/filter6'
 import filter7 from '../components/filter/filter7'
 import filter8 from '../components/filter/filter8'
 import filter9 from '../components/filter/filter9'
+import filter9 from '../components/filter/filter9'
+import filter10 from '../components/filter/filter10'
 import filter11 from '../components/filter/filter11'
 
 export default {
@@ -40,7 +42,8 @@ export default {
         filter7,
         filter8,
         filter9,
-        filter11,
+        filter10,
+        filter11
     },
     computed: {
         step() {
