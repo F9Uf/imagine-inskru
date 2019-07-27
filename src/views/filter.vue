@@ -15,6 +15,7 @@
 import filter1 from '../components/filter/filter1'
 import filter2 from '../components/filter/filter2'
 import filter3 from '../components/filter/filter3'
+import filter4 from '../components/filter/filter4'
 import filter5 from '../components/filter/filter5'
 import filter7 from '../components/filter/filter7'
 import filter9 from '../components/filter/filter9'
