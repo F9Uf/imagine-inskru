@@ -13,7 +13,7 @@
             ไม่มี
             </label>
         </div>
-        <div class="form-contro" v-if="radioBox === 'yes'">
+        <div class="form-control" v-if="radioBox === 'yes'">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="คณิตศาสตร์">
             </div>
