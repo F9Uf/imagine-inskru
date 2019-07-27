@@ -3,26 +3,23 @@
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th>ชั้น</th>
+                    <th class="th-sm">ชั้น</th>
                     <th>ห้อง</th>
                     <th>จำนวนนักเรียน</th>
+                    <th>ประเภท</th>
                     <th></th>
                 </tr>
             </thead>
 
             <tbody>
-                <tr>
-                    <td>ม.4</td>
-                    <td>1</td>
-                    <td>31</td>
+                <tr v-for="(f,i) in form" :key="i">
+                    <td>{{ f.room  }}</td>
+                    <td>{{ f.num  }}</td>
+                    <td>{{ f.stu  }}</td>
+                    <td>{{ f.class  }}</td>
                     <td>
-                        <button type="button" class="btn btn-primary btn-sm m-0">ดู</button>
+                        <router-link to="student"><button class="btn btn-primary">ดู</button></router-link>
                     </td>
-                </tr>
-                <tr>
-                    <td>ม.4</td>
-                    <td>2</td>
-                    <td>29</td>
                 </tr>
             </tbody>
         </table>
@@ -31,7 +28,22 @@
 
 <script>
 export default {
-    name: 'table'
+    name: 'table',
+    data() {
+        return {
+            form: [
+                {room: 4, num: 1, stu: 25, class: 'วิทย์คณิต'},
+                {room: 4, num: 2, stu: 24, class: 'ศิลป์คำนวณ'},
+                {room: 4, num: 3, stu: 29, class: 'ศิลป์ภาษา'},
+                {room: 5, num: 1, stu: 22, class: 'วิทย์คณิต'},
+                {room: 5, num: 2, stu: 30, class: 'ศิลป์คำนวณ'},
+                {room: 5, num: 3, stu: 29, class: 'ศิลป์ภาษา'},
+                {room: 6, num: 1, stu: 33, class: 'วิทย์คณิต'},
+                {room: 6, num: 2, stu: 24, class: 'ศิลป์คำนวณ'},
+                {room: 6, num: 3, stu: 23, class: 'ศิลป์ภาษา'},
+            ]
+        }
+    }
 }
 </script>
 
