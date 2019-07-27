@@ -136,7 +136,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
       /**
  * prism.js Github theme based on GitHub's theme.
  * @author Sam Clarke
