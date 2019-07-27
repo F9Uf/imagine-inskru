@@ -11,7 +11,6 @@
             <filter9 v-if="step === 9"></filter9>
             <filter11 v-if="step === 11"></filter11>
         </div>
-        {{ step }}
     </div>
 </template>
 
@@ -35,11 +34,6 @@ export default {
         filter7,
         filter9,
         filter11,
-    },
-    data() {
-        return {
-            step: 1,
-        }
     },
     computed: {
         step() {

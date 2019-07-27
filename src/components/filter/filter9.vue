@@ -33,6 +33,11 @@ export default {
                 r2: '',
             }
         }
+    },
+    methods: {
+        next() {
+            this.$store.dispatch('filterNext')
+        }
     }
 }
 </script>
