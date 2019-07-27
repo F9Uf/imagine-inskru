@@ -14,8 +14,8 @@
             </label>
         </div>
         <div class="form-contro" v-if="radioBox === 'yes'">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="คณิตศาสตร์">
+            <div class="form-group" v-for="(item, index) in form" :key="index">
+                <input type="text" class="form-control" :placeholder="item.placholder" v-model="item.text">
             </div>
         </div>
     </div>
@@ -26,17 +26,17 @@ export default {
     data() {
         return {
             radioBox: null,
-            form: {
-                math: '',
-                thai: '',
-                eng: '',
-                sci: '',
-                art: '',
-                tech: '',
-                sport: '',
-                social: '',
-                etc: ''
-            }
+            form: [
+                { title: 'math', text: '' , placholder: 'กลุ่มสาระการเรียนรู้คณิตศาสตร์'},
+                { title: 'thai', text: '' , placholder: 'กลุ่มสาระการเรียนรู้ภาษาไทย'},
+                { title: 'eng', text: '' , placholder: 'กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ'},
+                { title: 'sci', text: '' , placholder: 'กลุ่มสาระการเรียนรู้วิทยาศาสตร์'},
+                { title: 'art', text: '' , placholder: 'กลุ่มสาระการเรียนรู้ศิลปะ'},
+                { title: 'tech', text: '' , placholder: 'กลุ่มสาระการเรียนรู้การงานอาชีพและเทคโนโลยี'},
+                { title: 'sport', text: '' , placholder: 'กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา'},
+                { title: 'social', text: '' , placholder: 'กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนา และวัฒนธรรม'},
+                { title: 'etc', text: '' , placholder: 'อื่นๆ'},
+            ]
         }
     }
 }
