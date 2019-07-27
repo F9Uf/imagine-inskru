@@ -1,6 +1,6 @@
 <template>
     <div class="filter1">
-        <h3>ความสามารถพิเศษ</h3>
+        <h3>1. ความสามารถพิเศษ</h3>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="yes" v-model="radioBox">
             <label class="form-check-label" for="exampleRadios1">
@@ -13,9 +13,9 @@
             ไม่มี
             </label>
         </div>
-        <div class="form-control" v-if="radioBox === 'yes'">
+        <div class="form" v-if="radioBox === 'yes'">
             <div class="form-group" v-for="(item, index) in form" :key="index">
-                <input type="text" class="form-control" :placeholder="item.placholder" v-model="item.text">
+                <input id="form" type="text" class="form-control" :placeholder="item.placholder" v-model="item.text">
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
 export default {
     data() {
         return {
-            radioBox: null,
+            radioBox: '',
             form: [
                 { title: 'math', text: '' , placholder: 'กลุ่มสาระการเรียนรู้คณิตศาสตร์'},
                 { title: 'thai', text: '' , placholder: 'กลุ่มสาระการเรียนรู้ภาษาไทย'},

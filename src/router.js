@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import personal from './views/Personal.vue'
 
 Vue.use(Router)
 
@@ -26,6 +27,14 @@ export default new Router({
       component: function () {
         return import('./views/filter.vue')
       }
-    }
+    },
+    {
+      path: '/personal',
+      name: 'personal',
+      component: function () {
+        return import('./views/Personal.vue')
+      }
+    },
+    
   ]
 })
