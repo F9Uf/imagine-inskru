@@ -23,11 +23,12 @@ import filter11 from '../components/filter/filter11'
 export default {
     components: {
         filter1,
+        filter2,
         filter3,
         filter5,
         filter7,
         filter9,
-        filter11
+        filter11,
     }
 }
 </script>

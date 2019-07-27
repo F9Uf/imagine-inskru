@@ -13,7 +13,7 @@
             ไม่มี
             </label>
         </div>
-        <div class="form-contro" v-if="radioBox === 'yes'">
+        <div class="form-control" v-if="radioBox === 'yes'">
             <div class="form-group" v-for="(item, index) in form" :key="index">
                 <input type="text" class="form-control" :placeholder="item.placholder" v-model="item.text">
             </div>
