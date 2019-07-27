@@ -39,10 +39,10 @@
         <input
           class="form-check-input"
           type="checkbox"
-          value="{{item.label}}"
-          id="defaultCheck{{index}}"
+          :value="item.label"
+          :id="'defaultCheck'+index"
         />
-        <label class="form-check-label" for="defaultCheck{{index}}">{{item.label}}</label>
+        <label class="form-check-label" :for="'defaultCheck'+index">{{item.label}}</label>
       </div>
     </div>
     <div v-if="radioBox === 'problem'">
@@ -50,10 +50,10 @@
         <input
           class="form-check-input"
           type="checkbox"
-          value="{{item.label}}"
-          id="defaultCheck{{index}}"
+          :value="item.label"
+          :id="'defaultCheck'+index"
         />
-        <label class="form-check-label" for="defaultCheck{{index}}">{{item.label}}</label>
+        <label class="form-check-label" :for="'defaultCheck'+index">{{item.label}}</label>
       </div>
     </div>
   </div>
