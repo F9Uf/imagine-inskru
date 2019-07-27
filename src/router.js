@@ -34,6 +34,7 @@ export default new Router({
       component: function () {
         return import('./views/Personal.vue')
       }
-    }
+    },
+    
   ]
 })
