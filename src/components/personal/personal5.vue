@@ -241,9 +241,10 @@
       </div>
     <br>
 
-    <input type="submit" value="Submit" />
+    <router-link to="/filter">
+      <input type="submit" class="btn btn-primary mb-2" value="ถัดไป" />
+    </router-link>
     </form>
-
       
 </template>
 
