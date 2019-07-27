@@ -1,6 +1,6 @@
 <template>
   <div class="filter4">
-    <h3>ด้านการเรียน</h3>
+    <h3>4. ด้านเศรษฐกิจ</h3>
     <div class="form-check">
       <input
         class="form-check-input"
