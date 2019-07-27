@@ -2,6 +2,10 @@
   <div class="personal">
       
       <personal1></personal1>
+      <br>
+      <br>
+      <br>
+      
       <personal4></personal4>
   </div>
 </template>
