@@ -7,6 +7,7 @@
         <filter5></filter5>
         <filter7></filter7>
         <filter9></filter9>
+        <filter11></filter11>
     </div>
 </template>
 
@@ -17,6 +18,7 @@ import filter3 from '../components/filter/filter3'
 import filter5 from '../components/filter/filter5'
 import filter7 from '../components/filter/filter7'
 import filter9 from '../components/filter/filter9'
+import filter11 from '../components/filter/filter11'
 
 export default {
     components: {
@@ -24,7 +26,8 @@ export default {
         filter3,
         filter5,
         filter7,
-        filter9
+        filter9,
+        filter11
     }
 }
 </script>
