@@ -4,6 +4,7 @@
         <filter1></filter1>
         <filter2></filter2>
         <filter3></filter3>
+        <filter4></filter4>
         <filter5></filter5>
         <filter7></filter7>
         <filter9></filter9>
@@ -26,6 +27,7 @@ export default {
         filter1,
         filter2,
         filter3,
+        filter4,
         filter5,
         filter7,
         filter9,
