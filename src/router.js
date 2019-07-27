@@ -18,7 +18,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: function () { 
+      component: function () {
         return import(/* webpackChunkName: "about" */ './views/About.vue')
       }
     },
@@ -43,7 +43,13 @@ export default new Router({
     {
       path: '/profile',
       component: Profile
+    },
+    {
+      path: '/students',
+      name: 'students',
+      component: function () {
+        return import('./views/students.vue')
+      }
     }
-    
   ]
 })
