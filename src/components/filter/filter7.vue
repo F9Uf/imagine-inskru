@@ -19,6 +19,7 @@
         <div class="form-group" v-if="radio === 'r3'">
             <input type="text" class="form-control" v-model="form.r2" placeholder="โปรดระบุ">
         </div>
+        <button class="btn btn-primary" @click="next()">ถัดไป</button>
     </div>
 </template>
 
