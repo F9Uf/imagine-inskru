@@ -9,7 +9,9 @@
             <div class="form-group">
                 <input type="password" class="form-control" placeholder="password">
             </div>
-            <button class="btn btn-primary btn-">Login</button>
+            <router-link to="/home">
+                <button class="btn btn-primary">Login</button>
+            </router-link>
 
         </div>
     </div>
