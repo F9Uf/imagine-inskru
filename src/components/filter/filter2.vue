@@ -36,7 +36,7 @@
     </div>
     <div v-if="radioBox === 'risk'">
       <div class="form-check" v-for="(item, index) in risk" :key="index">
-        <input class="form-check-input" type="checkbox" :value="item.label" id="defaultCheck1">
+        <input class="form-check-input" type="checkbox" :value="item.label" :id="'defaultCheck'+index">
         <label class="form-check-label" :for="'defaultCheck'+index">
           {{item.label}}
         </label>
@@ -44,7 +44,7 @@
     </div>
     <div v-if="radioBox === 'problem'">
       <div class="form-check" v-for="(item, index) in problem" :key="index">
-        <input class="form-check-input" type="checkbox" :value="item.label" id="defaultCheck1">
+        <input class="form-check-input" type="checkbox" :value="item.label" :id="'defaultCheck'+index">
         <label class="form-check-label" :for="'defaultCheck1'+index">
           {{item.label}}
         </label>
