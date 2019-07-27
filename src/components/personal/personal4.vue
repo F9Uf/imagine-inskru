@@ -1,6 +1,6 @@
 <template>
   <form>
-      <h1>4. ข้อมูลด้านสุขภาพ</h1>
+      <h1>ข้อมูลด้านสุขภาพ</h1>
     <div class="form-group">
       <label for="Cd">
         โรคประจำตัว:

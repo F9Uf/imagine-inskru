@@ -1,6 +1,6 @@
 <template>
     <form>
-      <h1>5. ข้อมูลด้านอื่นๆ</h1>
+      <h1>ข้อมูลด้านอื่นๆ</h1>
     <div class="form-group">
       <label for="pican">
         ความพิการ:
