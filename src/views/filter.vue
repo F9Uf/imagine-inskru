@@ -2,20 +2,21 @@
     <div class="filter mb-5">
         <h1>filter page</h1>
         <div class="stepper">
-            <filter1 v-if="step === 1"></filter1>
-            <filter2 v-if="step === 2"></filter2>
-            <filter3 v-if="step === 3"></filter3>
-            <filter4 v-if="step === 4"></filter4>
-            <filter5 v-if="step === 5"></filter5>
-            <filter6 v-if="step === 6"></filter6>
-            <filter7 v-if="step === 7"></filter7>
-            <filter9 v-if="step === 9"></filter9>
-            <filter11 v-if="step === 11"></filter11>
+            <filter1 v-if="filterStep === 1"></filter1>
+            <filter2 v-if="filterStep === 2"></filter2>
+            <filter3 v-if="filterStep === 3"></filter3>
+            <filter4 v-if="filterStep === 4"></filter4>
+            <filter5 v-if="filterStep === 5"></filter5>
+            <filter6 v-if="filterStep === 6"></filter6>
+            <filter7 v-if="filterStep === 7"></filter7>
+            <filter9 v-if="filterStep === 9"></filter9>
+            <filter11 v-if="filterStep === 11"></filter11>
         </div>
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import filter1 from '../components/filter/filter1'
 import filter2 from '../components/filter/filter2'
 import filter3 from '../components/filter/filter3'
@@ -38,19 +39,15 @@ export default {
         filter9,
         filter11,
     },
-    computed: {
-        step() {
-            return this.$store.state.filterStep
-        }
-    },
-    mounted() {
-        this.$store.watch(
-            (state, getters) => getters.filterStep,
-            (newV, oldV) => {
-                this.step = newV
-            }
-        )
-    }
+    computed: mapState(['filterStep']),
+    // mounted() {
+    //     this.$store.watch(
+    //         (state, getters) => getters.filterStep,
+    //         (newV, oldV) => {
+    //             this.filterStep = newV
+    //         }
+    //     )
+    // }
 }
 </script>
 
