@@ -18,6 +18,7 @@
                 <input id="form" type="text" class="form-control" :placeholder="item.placholder" v-model="item.text">
             </div>
         </div>
+        <button class="btn btn-primary" @click="next()">ถัดไป</button>
     </div>
 </template>
 
@@ -37,6 +38,12 @@ export default {
                 { title: 'social', text: '' , placholder: 'กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนา และวัฒนธรรม'},
                 { title: 'etc', text: '' , placholder: 'อื่นๆ'},
             ]
+        }
+    },
+    methods: {
+        next() {
+            console.log('next');            
+            this.$store.dispatch('filterNext')
         }
     }
 }
