@@ -11,6 +11,7 @@
             <filter7 v-if="step === 7"></filter7>
             <filter8 v-if="step === 8"></filter8>
             <filter9 v-if="step === 9"></filter9>
+            <filter10 v-if="step === 10"></filter10>
             <filter11 v-if="step === 11"></filter11>
         </div>
     </div>
