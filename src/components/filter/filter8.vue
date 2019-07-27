@@ -50,6 +50,7 @@
         </label>
       </div>
     </div>
+    <button class="btn btn-primary" @click="next()">ถัดไป</button>
   </div>
 </template>
 
@@ -74,6 +75,12 @@ export default {
               {label: "มีการมั่วสุมทางเพศ"},
               {label:'หมกมุ่นในการใช้เครื่องมือ่อสารที่เกี่ยวข้องทางเพศ'}
             ]
+        }
+    },
+    methods: {
+        next() {
+            this.$store.dispatch('updateFilter1', this.form)
+            this.$store.dispatch('filterNext')         
         }
     }
 }

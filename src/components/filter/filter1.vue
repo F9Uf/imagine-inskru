@@ -42,8 +42,8 @@ export default {
     },
     methods: {
         next() {
-            console.log('next');            
-            this.$store.dispatch('filterNext')
+            this.$store.dispatch('updateFilter1', this.form)
+            this.$store.dispatch('filterNext')         
         }
     }
 }
