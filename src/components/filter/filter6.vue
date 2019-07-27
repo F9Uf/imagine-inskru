@@ -56,6 +56,7 @@
         <label class="form-check-label" :for="'defaultCheck'+index">{{item.label}}</label>
       </div>
     </div>
+    <button class="btn btn-primary" @click="next()">ถัดไป</button>
   </div>
 </template>
 
@@ -76,7 +77,13 @@ export default {
         { label: "เป็นผู้ติดบุหรี่ สุรา  หรือสารเสพติด" }
       ]
     };
-  }
+  },
+    methods: {
+        next() {
+            this.$store.dispatch('updateFilter1', this.form)
+            this.$store.dispatch('filterNext')         
+        }
+    }
 };
 </script>
 

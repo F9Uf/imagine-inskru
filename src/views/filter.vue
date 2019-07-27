@@ -11,6 +11,7 @@
             <filter7 v-if="filterStep === 7"></filter7>
             <filter8 v-if="filterStep === 8"></filter8>
             <filter9 v-if="filterStep === 9"></filter9>
+            <filter10 v-if="filterStep === 10"></filter10>
             <filter11 v-if="filterStep === 11"></filter11>
         </div>
     </div>
@@ -27,7 +28,7 @@ import filter6 from '../components/filter/filter6'
 import filter7 from '../components/filter/filter7'
 import filter8 from '../components/filter/filter8'
 import filter9 from '../components/filter/filter9'
-
+import filter10 from '../components/filter/filter10'
 import filter11 from '../components/filter/filter11'
 
 export default {
@@ -41,6 +42,7 @@ export default {
         filter7,
         filter8,
         filter9,
+        filter10,
         filter11,
     },
     computed: mapState(['filterStep']),

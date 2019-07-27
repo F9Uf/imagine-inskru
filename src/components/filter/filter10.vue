@@ -50,6 +50,7 @@
         </label>
       </div>
     </div>
+    <button class="btn btn-primary" @click="next()">ถัดไป</button>
   </div>
 </template>
 
@@ -70,6 +71,12 @@ export default {
               {label:'พิการซ้ำซ้อน (มีความบกพร่องตั้งแต่ 2 ประเภทขึ้นไป)'},
               {label:'อื่นๆ'}
             ]
+        }
+    },
+    methods: {
+        next() {
+            this.$store.dispatch('updateFilter1', this.form)
+            this.$store.dispatch('filterNext')         
         }
     }
 }

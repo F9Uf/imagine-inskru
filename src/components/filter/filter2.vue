@@ -50,6 +50,7 @@
         </label>
       </div>
     </div>
+    <button class="btn btn-primary" @click="next()">ถัดไป</button>
   </div>
 </template>
 
@@ -76,6 +77,12 @@ export default {
               {label: "ขาดเรียนบ่อยมากกว่า 1 วัน/สัปดาห์"},
               {label: "ไม่ส่งงานมากกว่า 2 วิชา"}
             ]
+        }
+    },
+    methods: {
+        next() {
+            this.$store.dispatch('updateFilter1', this.form)
+            this.$store.dispatch('filterNext')         
         }
     }
 }
