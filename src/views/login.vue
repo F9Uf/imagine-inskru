@@ -10,7 +10,7 @@
                 <input type="password" class="form-control" placeholder="password">
             </div>
             <router-link to="/home">
-                <button class="btn btn-primary">Login</button>
+                <button class="btn btn-primary btn-block">Login</button>
             </router-link>
 
         </div>
