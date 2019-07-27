@@ -5,7 +5,8 @@
         "role": "Registered user",
         "place": "New York",
         "avatar_url": "https://api.adorable.io/avatars/250/jason-bourne",
-        "years": ["ม.1","ม.2","ม.3"]
+        "years": ["ม.1","ม.2","ม.3"],
+        "tag": []
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "role": "Moderator",
         "place": "Los Santos",
         "avatar_url": "https://api.adorable.io/avatars/250/michael",
-        "years": ["ม.1","ม.2","ม.3","ม.4","ม.5","ม.6"]
+        "years": ["ม.1","ม.2","ม.3","ม.4","ม.5","ม.6"],
+        "tag": []
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "role": "Moderator",
         "place": "New York",
         "avatar_url": "https://api.adorable.io/avatars/250/peter-parker",
-        "years":["ม.1","ม.2"]
+        "years":["ม.1","ม.2"],
+        "tag": []
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "role": "Admin",
         "place": "Hogwarts",
         "avatar_url": "https://api.adorable.io/avatars/250/harry",
-        "years":["ม.1","ม.2","ม.3","ม.4"]
+        "years":["ม.1","ม.2","ม.3","ม.4"],
+        "tag": []
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "role": "Registered user",
         "place": "Gondor",
         "avatar_url": "https://api.adorable.io/avatars/250/boromir",
-        "years":["ม.1","ม.2","ม.3","ม.4"]
+        "years":["ม.1","ม.2","ม.3","ม.4"],
+        "tag": []
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "role": "Sponsor",
         "place": "Gotham City",
         "avatar_url": "https://api.adorable.io/avatars/250/bruce-wayne",
-        "years":["ม.1","ม.2","ม.3","ม.4","ม.5"]
+        "years":["ม.1","ม.2","ม.3","ม.4","ม.5"],
+        "tag": []
     }
 ]
