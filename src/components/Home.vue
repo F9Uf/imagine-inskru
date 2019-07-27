@@ -1,8 +1,11 @@
 <template>
     <div>
+        <div class="form-inline">
         <button v-on:click="changeGrade" class="btn btn-danger mr-1">ผลการเรียนมีความเสี่ยง</button>
-        <button v-on:click="late = true" class="btn btn-warning">มีปัญหาขาดเรียน</button>
-        <button v-on:click="grade = false; late = false" class="btn btn-info">ล้าง</button>
+        <button v-on:click="changeLate" class="btn btn-warning">มีปัญหาขาดเรียน</button>
+        <p class="ml-2">ผลการเรียนมีความเสี่ยง : <span>{{ grade }}</span></p>
+        <p class="ml-2">มีปัญหาขาดเรียน : <span>{{ late }}</span></p>
+        </div>
         <div class="table-responsive-sm mt-2">
             <table class="table">
                 <thead class="thead-dark">
@@ -47,7 +50,8 @@ export default {
                 {room: 6, num: 2, stu: 24, class: 'ศิลป์คำนวณ', late: true, grade: true},
                 {room: 6, num: 3, stu: 23, class: 'ศิลป์ภาษา', late: false, grade: false},
             ],
-            temp = null,
+            temp1: null,
+            temp2: null,
             late: false,
             grade: false
         }
@@ -55,11 +59,26 @@ export default {
     methods: {
         changeGrade () {
             if (this.grade === false) {
-                temp = form;
+                this.grade = true;
+                if (this.late === false) this.temp3 = this.form;
+                else this.temp2 = this.form;
                 return this.form = this.form.filter(e => e.grade);
             } else {
-                form.grade = false;
-                return this.form = this.temp;
+                this.grade = false;
+                if (this.late === false) this.form = this.temp3;
+                else this.form = this.temp2;
+            }
+        },
+        changeLate () {
+            if (this.late === false) {
+                this.late = true;
+                if (this.grade === false) this.temp3 = this.form;
+                else this.temp2 = this.form;
+                return this.form = this.form.filter(e => e.late);
+            } else {
+                this.late = false;
+                if (this.grade === false) this.form = this.temp3;
+                else this.form = this.temp2;
             }
         }
     }
