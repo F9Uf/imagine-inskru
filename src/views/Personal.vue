@@ -1,17 +1,17 @@
 <template>
   <div class="personal">
-      <personal></personal>
+      <personal1></personal1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import personal from '@components/personal/personal1.vue'
+import personal1 from '../components/personal/personal1.vue'
 
 export default {
   name: 'personal',
   components: {
-    personal
+    personal1
   }
 }
 </script>
