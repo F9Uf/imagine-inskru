@@ -1,6 +1,6 @@
 <template>
   <div class="filter2">
-    <h3>ด้านการเรียน</h3>
+    <h3>2. ด้านการเรียน</h3>
     <div class="form-check">
       <input
         class="form-check-input"
@@ -36,16 +36,16 @@
     </div>
     <div v-if="radioBox === 'risk'">
       <div class="form-check" v-for="(item, index) in risk" :key="index">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
+        <input class="form-check-input" type="checkbox" :value="item.label" :id="'defaultCheck'+index">
+        <label class="form-check-label" :for="'defaultCheck'+index">
           {{item.label}}
         </label>
       </div>
     </div>
     <div v-if="radioBox === 'problem'">
       <div class="form-check" v-for="(item, index) in problem" :key="index">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
+        <input class="form-check-input" type="checkbox" :value="item.label" :id="'defaultCheck'+index">
+        <label class="form-check-label" :for="'defaultCheck1'+index">
           {{item.label}}
         </label>
       </div>
