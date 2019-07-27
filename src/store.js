@@ -12,12 +12,12 @@ export default new Vuex.Store({
   },
   mutations: {
     setFilterStep (state, payload) {
-      state.filterStep = payload
+      state.filterStep += payload
     }
   },
   actions: {
     filterNext (context) {
-      context.commit('setFilterStep', context.state.filterStep + 1)
+      context.commit('setFilterStep', 1)
       console.log(context.state.filterStep);
     }
   }
