@@ -29,10 +29,16 @@
 </template>
 
 <script>
+const firebase = require('../service/firebaseConfig');
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted() {
+    console.log(firebase);
+    
   }
 }
 </script>
