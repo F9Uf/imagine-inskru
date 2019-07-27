@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-    <base-footer></base-footer>
+    <base-footer v-if="$route.path !== '/'"></base-footer>
   </div>
 </template>
 
