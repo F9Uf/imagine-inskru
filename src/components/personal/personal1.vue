@@ -45,30 +45,35 @@
 
       <!-- โทรศัพท์ -->
       <div class="form-inline mt-3">
-        <label for="phone">เบอร์โทรศัพท์</label>
+        <label for="phone">เบอร์โทรศัพท์:</label>
         <input type="text" class="form-control ml-1 mr-2" id="phoneNumber">
-        <label for="blood">กรุ๊ปเลือด</label>
+        <label for="blood">กรุ๊ปเลือด:</label>
         <input type="text" class="form-control ml-1 mr-2" id="bloodGroup">
       </div>
 
       <!-- พักอยู่กับใคร -->
       <div class="form-inline mt-3">
-        <label class="mt-3">พักอยู่กับใคร</label>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="">
-          </label>
-        </div>
+      <label class="mr-3">พักอยู่กับใคร:</label>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" name="familyStatus" v-model="familyStatus" value="both">
+        <label for="form-check-label">บิดาและมารดา</label>
       </div>
-      <!--  -->
-      <div class="form-inline mt-3">
-       
+      <div class="form-check">
+        <input type="radio" class="form-check-input ml-2" name="familyStatus" v-model="familyStatus" value="father">
+        <label for="form-check-label">บิดา</label>
       </div>
-
-      <label for=""></label>
-      <input type="text" class="form-control ml-1 mr-2" id="">
-
-  <button type="submit" class="btn btn-primary mt-5">Submit</button>
+      <div class="form-check">
+        <input type="radio" class="form-check-input ml-2" name="familyStatus" v-model="familyStatus" value="mother">
+        <label for="form-check-label">มารดา</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input ml-2" name="familyStatus" v-model="familyStatus" value="other">
+        <label for="form-check-label">อื่นๆ</label>
+      </div>
+      <div class="form-group" v-if="familyStatus === 'other'">
+        <input type="text" class="form-control ml-2" v-model="otherStatus" placeholder="โปรดระบุ">
+      </div>
+      </div>
 </form>
 </div>
 </template>
@@ -78,8 +83,11 @@ const firebase = require('../../service/firebaseConfig');
 
 export default {
   name: 'personal1',
-  mounted() {
-    console.log(firebase);
+  data() {
+    return {
+          familyStatus: null,
+          otherStatus: ''
+    }
   }
 }
 </script>

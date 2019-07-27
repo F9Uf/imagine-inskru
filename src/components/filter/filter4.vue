@@ -50,6 +50,7 @@
         </label>
       </div>
     </div>
+    <button class="btn btn-primary" @click="next()">ถัดไป</button>
   </div>
 </template>
 
@@ -68,6 +69,12 @@ export default {
               {label: "ครอบครัวมีภาระหนี้สินจำนวนมาก"},
               {label: "รายได้ไม่เพียงพอต่อการใช้จ่ายในชีวิตประจำวัน"}
             ]
+        }
+    },
+    methods: {
+        next() {
+            this.$store.dispatch('updateFilter1', this.form)
+            this.$store.dispatch('filterNext')         
         }
     }
 }

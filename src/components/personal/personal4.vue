@@ -149,10 +149,11 @@
         />
         <label class="custom-control-label" for="radio12">ไม่</label>
       </div>
-      <br>
     <br />
-    <br />
-    <input type="submit" value="Submit" />
+    <router-link to="/filter">
+      <input type="submit" class="btn btn-primary" value="ถัดไป" />
+    </router-link>
+    <br><br>
   </form>
 </template>
 
