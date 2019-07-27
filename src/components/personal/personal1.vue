@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1> Personal </h1>
+    <h1>ประวัติส่วนตัว</h1>
     <form action="/action_page.php">
       
       <!-- Firstname, Lastname and Nickname -->
