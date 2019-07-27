@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="form-inline">
         <button v-on:click="changeGrade" class="btn btn-danger mr-1">ผลการเรียนมีความเสี่ยง</button>
         <button v-on:click="changeLate" class="btn btn-warning">มีปัญหาขาดเรียน</button>
-        <p class="ml-2">ผลการเรียนมีความเสี่ยง : <span>{{ grade }}</span></p>
-        <p class="ml-2">มีปัญหาขาดเรียน : <span>{{ late }}</span></p>
+        <div class="form-inline">
+            <p class="ml-2">ผลการเรียนมีความเสี่ยง : <span>{{ grade }}</span></p>
+            <p class="ml-2">มีปัญหาขาดเรียน : <span>{{ late }}</span></p>
         </div>
         <div class="table-responsive-sm mt-2">
             <table class="table">
