@@ -351,7 +351,7 @@ export default {
 .students .content .item .detail .box-price .alcohol-package {
   float: left;
 }
-.students .content .item .date .b_date {
+.students .content .item .years .slot {
   background-color: #e5130a;
   border-radius: 4px;
   width: 85px;
@@ -549,7 +549,7 @@ export default {
     font-size: 10px;
     padding: 5px 0;
   }
-  .students .content .item .date .b_date {
+  .students .content .item .years .slot {
     width: 30px;
     height: auto;
     font-size: 10px;
