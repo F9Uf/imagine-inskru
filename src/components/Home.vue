@@ -25,7 +25,7 @@
                         <td>{{ f.stu  }}</td>
                         <td>{{ f.class  }}</td>
                         <td>
-                            <router-link to="student"><button class="btn btn-primary">ดู</button></router-link>
+                            <router-link to="students"><button class="btn btn-primary">ดู</button></router-link>
                         </td>
                     </tr>
                 </tbody>
