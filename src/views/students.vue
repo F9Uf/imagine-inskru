@@ -32,7 +32,7 @@
         <div class="item" v-for="(item,index) in students" :key="index" v-show="!loading">
         <div class="detail d-flex align-items-stretch">
           <div class="image">
-            <router-link :to="'/profile/' + item.id" :title="item.name">
+            <router-link to="/profile/" :title="item.name">
               <img
                 class="rounded float-left"
                 v-if="item.avatar_url.length != 0"
@@ -43,7 +43,7 @@
           </div>
           <div class="text">
             <div class="title">
-              <router-link :to="'/profile/' + item.id" :title="item.name ">{{ item.name }}</router-link>
+              <router-link to="/profile/" :title="item.name">{{ item.name }}</router-link>
             </div>
             <div class="home-area">
               <span class="cuisine" v-text="item.role"></span>
@@ -62,7 +62,7 @@
             <div class="link">
               <img class="icon" src="/icon/note-add.png" />
               <span class="view">
-                <router-link :to="'/profile/' + item.id" :title="item.name ">
+                <router-link to="/profile/" :title="item.name ">
                   <u>View Details</u>
                 </router-link>
               </span>
