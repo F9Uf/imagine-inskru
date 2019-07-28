@@ -38,7 +38,7 @@
                 v-if="item.avatar_url.length != 0"
                 v-bind:src="item.avatar_url"
               />
-              <img class="rounded float-left" v-else src="/bkrw-no-pic.png" />
+              <img class="rounded float-left" v-else src="/img/bkrw-no-pic.png" />
             </router-link>
           </div>
           <div class="text">
